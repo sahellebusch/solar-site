@@ -1,0 +1,29 @@
+site_name: Solar for Simpletons
+site_favicon: img/favicon-32x32.png
+theme:
+  name: material
+  palette:
+    primary: blue grey
+  # TODO
+  # favicon: img/favicon.svg
+  # logo: img/favicon.svg
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - mermaid2
+  - search
+
+nav:
+  - Home: index.md

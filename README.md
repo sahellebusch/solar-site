@@ -1,1 +1,1 @@
-# solar-site
+# Solar Site
