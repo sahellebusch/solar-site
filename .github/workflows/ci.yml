@@ -24,7 +24,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - run: ./bin/lint.sh
-      - run: ./bin/validate-authors.sh
   build:
     runs-on: ubuntu-latest
     steps:
@@ -43,10 +42,6 @@ jobs:
           cairosvg \
           mkdocs-mermaid2-plugin \
           mkdocs-unused-files \
-          mkdocs-gitbook \
-          mkdocs-mermaid2-plugin \
-          mkdocs-git-authors-plugin \
-          mkdocs-git-revision-date-localized-plugin \
           mkdocs-material
       - run: mkdocs get-deps
       - run: mkdocs build --site-dir ./_site
